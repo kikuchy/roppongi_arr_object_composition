@@ -171,7 +171,7 @@ Intent intent = NextScreenActivity.createIntent(this, selectedItems)
 
 ----
 
-## 適当にメンバが保持されるようにする (Optional)
+## 適当にメンバが保持されるようにする
 
 * Composition するクラスにも `onSaveInstanceState()` と `onRestoreInstanceState()` を生やしておく。
 * Activity の同名メソッドで呼び出す
@@ -246,6 +246,8 @@ Activity と同様に、 Fragment からも機能を切り離すことができ�
 
 
 ---
+
+![Qiita](./qiita_header.png)
 
 Qiitaにも書いてあるのでこちらもご参照ください。
 

@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "presentasion": "`npm bin`/reveal-md object_composition.md --theme solarized"
   },
   "author": "kikuchy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "reveal-md": "0.0.22"
+  }
 }

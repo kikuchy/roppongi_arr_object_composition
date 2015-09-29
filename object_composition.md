@@ -1,6 +1,6 @@
 # ActivityをスリムにするObject Compositionパターン
 
-@kikuchy
+kikuchy @ Roppongi.aar #1
 
 
 ---
@@ -25,7 +25,15 @@
 * MVC? MVP? 知ってるけど実現するの難しいよね(・ω<)
 * 退職者が残していったスパゲッティコードを崩さないようにするの大変だよね(・ω<)
 
-Note: そんな方向けです。
+Note: 「つい汚いコードを書いちゃう」「汚いコードを保守せざるを得ない」そんな方向けです。
+
+
+----
+
+## 想定する環境
+
+* ButterKnifeとかEventBusとか使わない！！（使えない）
+* 基本的に全部 SDK と Support Library でできる範囲で開発している Google 原理主義！！
 
 
 ---
@@ -64,11 +72,13 @@ Note: そんな方向けです。
 
 ## Activity の役割がはっきりする
 
+Note: MVP, MVCのViewに徹させることができます。
 
 ----
 
 ## 同じような機能を複数の画面で使いまわせる
 
+Note: いろいろな既存のActivityにも差し込むことができます。
 
 ----
 
@@ -116,7 +126,7 @@ Note: そんな方向けです。
 * Composition するクラスとは **「Activity に組み合わせて使える、単一機能を実現するクラス」**
 * これがわかる名前で、チーム内で合意が取れれば良い。
 	* `〜〜Composable`
-	* `〜〜ActivityCOmposition`
+	* `〜〜ActivityComposition`
 	* `〜〜Manager`
 など。
 
@@ -251,6 +261,9 @@ Activity と同様に、 Fragment からも機能を切り離すことができ�
 
 Qiitaにも書いてあるのでこちらもご参照ください。
 
+[http://qiita.com/kikuchy/items/e9900db1dd791fc19dc2](http://qiita.com/kikuchy/items/e9900db1dd791fc19dc2)
+
+Note: サンプルコードもこちらにあります。
 
 ---
 
